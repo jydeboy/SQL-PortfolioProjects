@@ -13,7 +13,7 @@ From Covid_Deaths
 where continent is not null
 order by 1,2
 
---LOOKING AT THE TOAL CASES VS TOTAL DEATHS, SHOWS THE LIKELIHOOD OF DYING IF YOU CONTRACT COVID IN YOUR COUNTRY
+--LOOKING AT THE TOTAL CASES VS TOTAL DEATHS, SHOWS THE LIKELIHOOD OF DYING IF YOU CONTRACT COVID IN YOUR COUNTRY
 
 select Location, date, total_cases, total_deaths, (cast(total_deaths as float)/total_cases)*100 as DeathPercentage
 From Covid_Deaths
